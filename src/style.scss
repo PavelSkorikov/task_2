@@ -1,3 +1,8 @@
-div {
-    color: red;
-  }
+@font-face {
+	font-family: 'quicksand';
+	src: url('fonts/quicksand.eot');
+	src: local('☺'), url('fonts/quicksand.woff') format('woff'), url('fonts/quicksand.ttf') format('truetype'), url('fonts/quicksand.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@import "./UI_kit/colors&type/colorbox/colorbox.scss";

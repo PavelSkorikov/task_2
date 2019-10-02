@@ -1,0 +1,26 @@
+.color {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 6px;
+}
+.text {
+    display: inline-block;
+    font-family: quicksand;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 12px;
+    font-style: mixed;
+    text-align: left;
+    padding-left: 40px;
+    :first-child {
+        font-weight: bold;
+    }
+}
+.colorbox__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

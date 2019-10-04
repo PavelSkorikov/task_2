@@ -1,1 +1,9 @@
-    @import "./__item/colorbox__item.scss"
+    @import "./item/item.scss";
+
+.colorbox {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    list-style: none;
+    padding: 0px;
+}

@@ -1,0 +1,10 @@
+@import "./item__rect.scss";
+@import "./item__text.scss";
+@import "./item__rect_color.scss";
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px; 
+}

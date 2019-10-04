@@ -1,14 +1,8 @@
-.color {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    background-color: black;
-    border-radius: 6px;
-}
-.text {
+.item__text {
     display: inline-block;
     font-family: quicksand;
     font-style: normal;
+    color: #1F2041;
     font-size: 19px;
     line-height: 12px;
     font-style: mixed;
@@ -17,10 +11,4 @@
     :first-child {
         font-weight: bold;
     }
-}
-.colorbox__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
 }

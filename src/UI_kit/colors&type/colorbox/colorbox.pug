@@ -7,4 +7,20 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="style.css")
     body
-        include ./__item/colorbox__item.pug
+        - var values = ['100', '75', '50', '25', '5', 'Purple', 'Green'];
+        ul(class="colorbox")
+            each val in values
+                li(class="item")
+                    div(class='item__rect item__rect_color_'+val)
+                    div(class='item__text')
+                        if val == 'Purple'
+                            p Purple
+                            p #BC9CFF
+                        else
+                            if val == 'Green'
+                                p Green
+                                p #6FCF97
+                            else
+                                p Dark shade #{val}%
+                                p #1F2041
+            

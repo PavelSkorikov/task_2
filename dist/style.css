@@ -1,2 +1,65 @@
-div {
-  color: red; }
+@charset "UTF-8";
+@font-face {
+  font-family: 'quicksand';
+  src: url(fonts/quicksand.eot);
+  src: local("☺"), url(fonts/quicksand.woff) format("woff"), url(fonts/quicksand.ttf) format("truetype"), url(fonts/quicksand.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.item__rect {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px; }
+
+.item__text {
+  display: inline-block;
+  font-family: quicksand;
+  font-style: normal;
+  color: #1F2041;
+  font-size: 19px;
+  line-height: 12px;
+  font-style: mixed;
+  text-align: left;
+  padding-left: 40px; }
+  .item__text :first-child {
+    font-weight: bold; }
+
+.item__rect_color_100 {
+  background-color: #1F2041;
+  opacity: 1; }
+
+.item__rect_color_75 {
+  background-color: #1F2041;
+  opacity: 0.75; }
+
+.item__rect_color_50 {
+  background-color: #1F2041;
+  opacity: 0.5; }
+
+.item__rect_color_25 {
+  background-color: #1F2041;
+  opacity: 0.25; }
+
+.item__rect_color_5 {
+  background-color: #1F2041;
+  opacity: 0.05; }
+
+.item__rect_color_Purple {
+  background-color: #BC9CFF; }
+
+.item__rect_color_Green {
+  background-color: #6FCF97; }
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px; }
+
+.colorbox {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  list-style: none;
+  padding: 0px; }

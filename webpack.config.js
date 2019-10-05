@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: { main: './src/index.js' },
-  devServer: {contentBase: './dist'},
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'main.js',
+  },
+  devServer: {
+    contentBase: './dist',
+    overlay: true
   },
 
   module: {
@@ -26,14 +29,7 @@ module.exports = {
             pretty: true
         }
       },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract(
-          {
-            fallback: 'style-loader',
-            use: ['css-loader']
-          })
-      },
+      
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract(
@@ -42,13 +38,36 @@ module.exports = {
             use: ['css-loader', 'sass-loader']
           })
       },
+
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        exclude: [
+          path.resolve(__dirname, "./src/fonts") //исключаем файлы svg - шрифтов (остаются только картинки)
+        ],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/'  
+            } 
+          }
+        ]           
       },
+
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader']
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+        include: [
+          path.resolve(__dirname, "./src/fonts") // выбираем только svg-файлы шрифты
+        ],
+        use: [   {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'  
+            } 
+          }
+        ]   
       }
     ]
   },
@@ -56,7 +75,6 @@ module.exports = {
   plugins: [ 
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      chunks: ['index'],
       template: './src/UI_kit/colors&type/colorbox/colorbox.pug'
     }),
     new ExtractTextPlugin({filename: 'style.css'})

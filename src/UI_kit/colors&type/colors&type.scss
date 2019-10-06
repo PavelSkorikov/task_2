@@ -1,0 +1,18 @@
+@import "./colorbox/colorbox.scss";
+@import "./types/types.scss";
+
+.page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.hide-block1 {
+    width: 150px;
+    order: 1;
+    flex-shrink: 0;
+}
+.hide-block2 {
+    width: 430px;
+    order: 3;
+    flex-shrink: 0;
+}

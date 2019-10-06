@@ -1,10 +1,47 @@
-@import "./item__rect.scss";
-@import "./item__text.scss";
-@import "./item__rect_color.scss";
-
 .item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 10px; 
+    padding-bottom: 20px; 
+}
+.item__rect {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+.item__text {
+    display: inline-block;
+    font-family: Quicksand-Medium;
+    font-style: normal;
+    color: #1F2041;
+    font-size: 19px;
+    line-height: 29px;
+    text-align: left;
+    padding-left: 40px;
+    :first-child {
+        font-family: Quicksand-Medium;
+        font-style: bold;
+        font-weight: bold;
+    }
+}
+
+$color: #1F2041;
+$opacity: 0;
+
+@for $i from 4 to 0 {
+    .item__rect_color_#{$i*25} {
+        background-color: $color;
+        opacity: $i*0.25;
+    }  
+}
+.item__rect_color_5 {
+    background-color: $color;
+    opacity: 0.05;
+}
+.item__rect_color_Purple {
+    background-color: #BC9CFF;
+}
+.item__rect_color_Green {
+    background-color: #6FCF97;
 }

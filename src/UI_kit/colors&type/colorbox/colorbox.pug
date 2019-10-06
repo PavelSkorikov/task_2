@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-        link(rel="stylesheet", href="style.css")
-    body
-        - var values = ['100', '75', '50', '25', '5', 'Purple', 'Green'];
-        ul(class="colorbox")
-            each val in values
-                li(class="item")
-                    div(class='item__rect item__rect_color_'+val)
-                    div(class='item__text')
-                        if val == 'Purple'
-                            p Purple
-                            p #BC9CFF
-                        else
-                            if val == 'Green'
-                                p Green
-                                p #6FCF97
-                            else
-                                p Dark shade #{val}%
-                                p #1F2041
+
+- var values = ['100', '75', '50', '25', '5', 'Purple', 'Green'];
+ul(class="colorbox colorbox_position")
+    each val in values
+        li(class="item")
+            div(class='item__rect item__rect_color_'+val)
+            div(class='item__text')
+                if val == 'Purple'
+                    spav Purple
+                    br
+                    span #BC9CFF
+                else
+                    if val == 'Green'
+                        span Green
+                        br
+                        span #6FCF97
+                    else
+                        span Dark Shade #{val}%
+                        br
+                        span #1F2041
             

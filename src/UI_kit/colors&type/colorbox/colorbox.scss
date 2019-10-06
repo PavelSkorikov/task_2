@@ -2,8 +2,13 @@
 
 .colorbox {
     display: flex;
+    order: 2;
     flex-direction: column;
     align-content: flex-start;
     list-style: none;
     padding: 0px;
+}
+
+.colorbox_position {
+    margin-top: 145px;
 }

@@ -75,7 +75,7 @@ module.exports = {
   plugins: [ 
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/UI_kit/colors&type/colorbox/colorbox.pug'
+      template: path.resolve(__dirname, "./src/index.pug")
     }),
     new ExtractTextPlugin({filename: 'style.css'})
   ]

@@ -20,45 +20,38 @@
         font-size: $var;
     }
 }
-.types__description-h1 {
+.types__description {
     display: inline-block;
-    font-family: Quicksand-Medium;
     color: #1F2041;
+    text-align: left;
+    margin-left: 30px;
+}
+.types__description_font_h1 {
+    font-family: Quicksand-Medium;
     font-style: normal;
     font-weight: bold;
-    text-align: left;
     font-size: 24px;
-    padding-left: 30px; 
 }
-.types__description-h2 {
-    display: inline-block;
+.types__description_font_h2 {
     font-family: Quicksand-Medium;
-    color: #1F2041;
     font-style: normal;
     font-weight: bold;
-    text-align: left;
     font-size: 19px;
-    padding-left: 30px; 
+    letter-spacing: 0.14px;
 }
-.types__description-h3 {
-    display: inline-block;
+.types__description_font_h3 {
     font-family: Montserrat-Bold;
-    color: #1F2041;
-    font-style: normal;
-    font-weight: bold;
-    text-align: left;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding-left: 30px; 
-}
-.types__description-body {
-    display: inline;
-    font-family: Montserrat;
-    color: #1F2041;
     font-style: normal;
     font-weight: normal;
-    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.22px;
+}
+.types__description_font_body {
+    font-family: Montserrat-Regular;
+    font-style: normal;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 141%;
-    margin-left: 30px;
+    line-height: 80%;
+    
 }

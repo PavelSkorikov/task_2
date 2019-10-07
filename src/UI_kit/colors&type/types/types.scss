@@ -2,13 +2,10 @@
 
 .types {
     display: flex;
-    order: 4;
     flex-direction: column;
+    flex-shrink: 1;
     align-content: flex-start;
     list-style: none;
     padding: 0px;
-}
-
-.types_position {
-    margin-top: 145px;
+    margin: 0px;
 }

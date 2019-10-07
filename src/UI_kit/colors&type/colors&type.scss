@@ -1,18 +1,25 @@
 @import "./colorbox/colorbox.scss";
 @import "./types/types.scss";
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    height: 145px;
+}
 .page {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .hide-block1 {
     width: 150px;
-    order: 1;
-    flex-shrink: 0;
+    flex-shrink: 4;
 }
 .hide-block2 {
-    width: 430px;
-    order: 3;
-    flex-shrink: 0;
+    width: 428px;
+    flex-shrink: 4; 
 }
+
+@import "./media-queries.scss";

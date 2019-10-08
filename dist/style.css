@@ -1,14 +1,38 @@
 @font-face {
-  font-family: 'Quicksand';
-  src: local("Quicksand Regular"), url(fonts/quicksandregular.ttf) format("ttf"), url(fonts/quicksandregular.woff) format("woff"), url(fonts/quicksandregular.svg) format("svg");
+  font-family: 'Quicksand-Medium';
+  src: local("Quicksand-Medium"), url(fonts/Quicksand-Medium.ttf) format("ttf"), url(fonts/Quicksand-Medium.woff) format("woff"), url(fonts/Quicksand-Medium.svg) format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat-Light"), url(fonts/montserratlight.ttf) format("ttf"), url(fonts/montserratlight.woff) format("woff"), url(fonts/montserratlight.svg) format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local("Montserrat-Regular"), url(fonts/montserrat.ttf) format("ttf"), url(fonts/montserrat.woff) format("woff"), url(fonts/montserrat.svg) format("svg");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: local("Quicksand Bold"), url(fonts/quicksandbold.ttf) format("ttf"), url(fonts/quicksandbold.woff) format("woff"), url(fonts/quicksandbold.svg) format("svg");
-  font-weight: bold;
+  font-family: 'Montserrat-Bold';
+  src: local("Montserrat-Bold"), url(fonts/montserratbold.ttf) format("ttf"), url(fonts/montserratbold.woff) format("woff"), url(fonts/montserratbold.svg) format("svg");
+  font-weight: 700;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(fonts/MaterialIcons-Regular.svg) format("svg"), url(fonts/MaterialIcons-Regular.woff) format("woff"), url(fonts/MaterialIcons-Regular.ttf) format("truetype"); }
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px; }
 
 .item__rect {
   display: inline-block;
@@ -18,7 +42,7 @@
 
 .item__text {
   display: inline-block;
-  font-family: quicksand;
+  font-family: Quicksand-Medium;
   font-style: normal;
   color: #1F2041;
   font-size: 19px;
@@ -26,6 +50,8 @@
   text-align: left;
   padding-left: 40px; }
   .item__text :first-child {
+    font-family: Quicksand-Medium;
+    font-style: bold;
     font-weight: bold; }
 
 .item__rect_color_100 {
@@ -54,15 +80,159 @@
 .item__rect_color_Green {
   background-color: #6FCF97; }
 
-.item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-bottom: 10px; }
-
 .colorbox {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   align-content: flex-start;
   list-style: none;
+  padding: 0px;
+  margin: 0px; }
+
+.types__item {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 50px; }
+
+.types__title {
+  display: inline-block;
+  width: 35px;
+  font-family: "Montserrat";
+  color: rgba(31, 32, 65, 0.25);
+  font-style: normal;
+  line-height: 100%;
+  text-align: right; }
+
+.types__title_size_24px {
+  font-size: 24px; }
+
+.types__title_size_19px {
+  font-size: 19px; }
+
+.types__title_size_12px {
+  font-size: 12px; }
+
+.types__title_size_14px {
+  font-size: 14px; }
+
+.types__description {
+  display: inline-block;
+  color: #1F2041;
+  text-align: left;
+  margin-left: 30px; }
+
+.types__description_font_h1 {
+  font-family: Quicksand-Medium;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px; }
+
+.types__description_font_h2 {
+  font-family: Quicksand-Medium;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 0.14px; }
+
+.types__description_font_h3 {
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22px; }
+
+.types__description_font_body {
+  font-family: Montserrat-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 80%; }
+
+.types {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  align-content: flex-start;
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  margin: 0px;
   padding: 0px; }
+
+.header {
+  height: 145px; }
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start; }
+
+.hide-block1 {
+  width: 150px;
+  flex-shrink: 4; }
+
+.hide-block2 {
+  width: 428px;
+  flex-shrink: 4; }
+
+@media screen and (max-width: 720px) {
+  .page {
+    flex-wrap: wrap; } }
+
+.card-box {
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+
+.button {
+  padding: 0px;
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.button__arrow {
+  position: relative;
+  z-index: 100;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F4F4F6; }

@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Quicksand-Medium';
 	src: local('Quicksand-Medium'),
-			url('./fonts/Quicksand-Medium.ttf') format('ttf'), 
+			url('./fonts/Quicksand-Medium.ttf') format('truetype'), 
 			url('./fonts/Quicksand-Medium.woff') format('woff'), 
 			url('./fonts/Quicksand-Medium.svg') format('svg');
     font-weight: 300;
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Montserrat';
 	src: local('Montserrat-Light'),
-			url('./fonts/montserratlight.ttf') format('ttf'),
+			url('./fonts/montserratlight.ttf') format('truetype'),
 			url('./fonts/montserratlight.woff') format('woff'),
 			url('./fonts/montserratlight.svg') format('svg');	
     font-weight: 300;
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Montserrat-Regular';
 	src: local('Montserrat-Regular'),
-			url('./fonts/montserrat.ttf') format('ttf'),
+			url('./fonts/montserrat.ttf') format('truetype'),
 			url('./fonts/montserrat.woff') format('woff'),
 			url('./fonts/montserrat.svg') format('svg');	
     font-weight: 400;
@@ -29,11 +29,22 @@
 @font-face {
     font-family: 'Montserrat-Bold';
 	src: local('Montserrat-Bold'),
-			url('./fonts/montserratbold.ttf') format('ttf'), 
+			url('./fonts/montserratbold.ttf') format('truetype'), 
 			url('./fonts/montserratbold.woff') format('woff'), 
 			url('./fonts/montserratbold.svg') format('svg');
     font-weight: 700;
-    font-style: normal;
+	font-style: normal;
 }
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Material Icons'),
+		 local('MaterialIcons-Regular'),
+		 url('./fonts/MaterialIcons-Regular.svg') format('svg'),
+		 url('./fonts/MaterialIcons-Regular.woff') format('woff'),
+		 url('./fonts/MaterialIcons-Regular.ttf') format('truetype');
+  }
 
 @import "./UI_kit/colors&type/colors&type.scss";
+@import "./UI_kit/cards/cards.scss";

@@ -1,33 +1,41 @@
 .button {
-    padding: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 320px;
     height: 44px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
+}
+.button__text {
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 280px;
     font-family: Montserrat-Bold;
     font-style: normal;
     font-weight: normal;
+    letter-spacing: normal;
     font-size: 12px;
-    line-height: 44px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.button__arrow {
-    position: relative;
-    z-index: 100;
+.button__icon {
+    display: inline-block;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
+    color: white;
     line-height: 1;
     text-transform: none;
     letter-spacing: normal;
-    color: #FFFFFF;
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
+    
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
@@ -36,4 +44,14 @@
     -moz-osx-font-smoothing: grayscale;
     /* Support for IE. */
     font-feature-settings: 'liga';
+}
+.button__icon_position {
+    position: absolute;
+    z-index: 900;
+    padding-left: 276px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

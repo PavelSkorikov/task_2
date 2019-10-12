@@ -12,7 +12,7 @@
 }
 .item__text {
     display: inline-block;
-    font-family: Quicksand-Medium;
+    font-family: Quicksand;
     font-style: normal;
     color: #1F2041;
     font-size: 19px;
@@ -20,9 +20,10 @@
     text-align: left;
     padding-left: 40px;
     :first-child {
-        font-family: Quicksand-Medium;
+        font-family: Quicksand-Bold;
         font-style: bold;
-        font-weight: bold;
+        font-weight: normal;
+        letter-spacing: normal;
     }
 }
 

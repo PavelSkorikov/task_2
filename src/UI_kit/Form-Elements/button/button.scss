@@ -13,13 +13,7 @@
     z-index: 100;
     display: inline-block;
     width: 280px;
-    font-family: Montserrat-Bold;
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: normal;
-    font-size: 12px;
     text-align: center;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
 .button__icon {
@@ -45,7 +39,7 @@
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
-.button__icon_position {
+.button__icon_position_right {
     position: absolute;
     z-index: 900;
     margin-left: 276px;

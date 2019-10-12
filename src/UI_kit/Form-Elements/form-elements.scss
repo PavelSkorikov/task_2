@@ -1,9 +1,18 @@
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
-@import "./input-text/input-text.scss";
+@import "./text-field/text-field.scss";
 
 body {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-color: #F4F4F6;
+    background-color: #FFFF;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 140px;
+    padding-left: 1px;
+    
 }

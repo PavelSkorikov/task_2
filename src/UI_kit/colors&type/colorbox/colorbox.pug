@@ -2,11 +2,11 @@
 - var values = ['100', '75', '50', '25', '5', 'Purple', 'Green'];
 ul(class="colorbox")
     each val in values
-        li(class="item")
-            div(class='item__rect item__rect_color_'+val)
-            div(class='item__text')
+        li(class="color")
+            div(class='color__box color__box_color_'+val)
+            div(class='color__text')
                 if val == 'Purple'
-                    spav Purple
+                    span Purple
                     br
                     span #BC9CFF
                 else

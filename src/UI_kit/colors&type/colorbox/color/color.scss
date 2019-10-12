@@ -1,16 +1,16 @@
-.item {
+.color {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-bottom: 20px; 
 }
-.item__rect {
+.color__box {
     display: inline-block;
     width: 70px;
     height: 70px;
     border-radius: 6px;
 }
-.item__text {
+.color__text {
     display: inline-block;
     font-family: Quicksand;
     font-style: normal;
@@ -28,21 +28,20 @@
 }
 
 $color: #1F2041;
-$opacity: 0;
 
 @for $i from 4 to 0 {
-    .item__rect_color_#{$i*25} {
+    .color__box_color_#{$i*25} {
         background-color: $color;
         opacity: $i*0.25;
     }  
 }
-.item__rect_color_5 {
+.color__box_color_5 {
     background-color: $color;
     opacity: 0.05;
 }
-.item__rect_color_Purple {
+.color__box_color_Purple {
     background-color: #BC9CFF;
 }
-.item__rect_color_Green {
+.color__box_color_Green {
     background-color: #6FCF97;
 }

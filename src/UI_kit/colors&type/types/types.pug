@@ -1,24 +1,10 @@
+mixin type(name, size, description)
+    li(class="type")
+        div(class="type__title type__title_size_"+size)=name
+        div(class="type__font type__font_"+name)  !{description}
+
 ul(class="types")
-    li(class="type")
-        span(class="type__title type__title_size_24px") H1
-        span(class="type__font type__font_h1") 
-            span This one is the sub-section or
-            br
-            span widget title
-    li(class="type")
-        span(class="type__title type__title_size_19px") H2
-        span(class="type__font type__font_h2") 
-            span Next one is the item title inside
-            br
-            span widgets
-    li(class="type")
-        span(class="type__title type__title_size_12px") H3
-        span(class="type__font types__description_font_h3") 
-            span this is a label or cta text
-    li(class="type")
-        span(class="type__title type__title_size_14px") Body
-        span(class="type__font type__font_body") 
-            span This is the body text which is used for most
-            br
-            span of the design, like paragraphs, lists, etc.
-        
+    +type('H1', '24px', "<span>This one is the sub-section or</span><br><span>widget title</span>")
+    +type('H2', '19px', "<span>Next one is the item title inside</span><br><span>widgets</span>")
+    +type('H3', '12px', "<span>this is a label or cta text</span>") 
+    +type('Body', '14px', "<span>This is the body text which is used for most</span><br><span>of the design, like paragraphs, lists, etc.</span>")

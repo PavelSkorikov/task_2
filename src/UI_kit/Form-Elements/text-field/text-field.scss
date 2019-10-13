@@ -1,23 +1,21 @@
 .text-field {
     width: 320px;
-    align-content: center;   
 }
 .text-field__description {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    vertical-align: top;
+}
+.text-field__description_height_default {
     height: 23px;
+    align-items: flex-start;
 }
 .text-field__description_text_label {
     display: inline-block;
     font-size: 12px;
-    float: left;
     align-self: center;
 }
 .text-field__description_text_state {
     display: inline-block;
-    float: right;
     font-family: Montserrat-Regular;
     font-size: 12px;
     text-transform: uppercase;
@@ -25,16 +23,20 @@
     
 }
 .text-field__input {
+    display: flex;
+    align-items: center;
     height: 44px;
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 15px;
-    padding-top: 13px;
-
 }
-.text-field__input_placeholder_text {
-    text-align: left;
+.text-field__input_border_default {
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.text-field__input_placeholder_default {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
     line-height: 18px;
+    color: rgba(54, 59, 197, 0.25);
 }

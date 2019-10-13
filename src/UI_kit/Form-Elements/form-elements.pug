@@ -4,9 +4,15 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=1440px, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Cards
+        title Form Elements
         link(rel="stylesheet", href="style.css")
     body
         include ../logo.pug
         div.block
             include ./text-field/text-field.pug
+            include ./text-field-hover/text-field-hover.pug
+            include ./dropdown/dropdown.pug
+            include ./masked-text-field/masked-text-field.pug
+            .date-dropdown-box
+                include ./date-dropdown/date-dropdown.pug
+            

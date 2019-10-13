@@ -1,6 +1,11 @@
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
 @import "./text-field/text-field.scss";
+@import "./text-field-hover/text-field-hover.scss";
+@import "./dropdown/dropdown.scss";
+@import "./masked-text-field/masked-text-field.scss";
+@import "./date-dropdown-masked/date-dropdown-masked.scss";
+@import "./date-dropdown/date-dropdown.scss";
 
 body {
     box-sizing: border-box;
@@ -11,8 +16,26 @@ body {
 .block {
     display: flex;
     flex-direction: column;
+    width: 321px;
     margin-left: 140px;
     margin-top: 140px;
     padding-left: 1px;
-    
+}
+.block__text-field {
+    margin-bottom: 20px;
+}
+.block__text-field-hover {
+    margin-bottom: 19.56px;
+}
+.block__dropdown {
+    margin-bottom: 19.56px;
+}
+.block__masked-text-field {
+    margin-bottom: 40px;
+}
+.date-dropdown-box {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 65px;
 }

@@ -1,0 +1,15 @@
+mixin date-dropdown(date, masked)
+    div(class="text-field date-dropdown")
+        div(class="text-field__description text-field__description_height_hover-focus")
+            span(class="type__font_H3") date dropdown
+        div(class="text-field__input text-field__input_border_default dropdown__icon-box_position_space")
+            if masked
+                span(class="text-field__input_placeholder_default")=date
+                .dropdown__icon-box
+                    .dropdown__icon keyboard_arrow_down
+            else
+                span(class="type__font_Body")=date
+                .dropdown__icon-box
+                    .dropdown__icon keyboard_arrow_down
++date-dropdown('ДД.ММ.ГГГГ')
++date-dropdown('19.08.2019')

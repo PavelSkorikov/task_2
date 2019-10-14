@@ -4,8 +4,9 @@
 @import "./text-field-hover/text-field-hover.scss";
 @import "./dropdown/dropdown.scss";
 @import "./masked-text-field/masked-text-field.scss";
-@import "./date-dropdown-masked/date-dropdown-masked.scss";
 @import "./date-dropdown/date-dropdown.scss";
+@import "./filter-date-dropdown/filter-date-dropdown.scss";
+@import "./subscription-text-field/subscription-text-field.scss";
 
 body {
     box-sizing: border-box;
@@ -19,23 +20,32 @@ body {
     width: 321px;
     margin-left: 140px;
     margin-top: 140px;
-    padding-left: 1px;
 }
 .block__text-field {
     margin-bottom: 20px;
+    margin-left: 1px;
 }
 .block__text-field-hover {
     margin-bottom: 19.56px;
+    margin-left: 1px;
 }
 .block__dropdown {
     margin-bottom: 19.56px;
+    margin-left: 1px;
 }
 .block__masked-text-field {
     margin-bottom: 40px;
+    margin-left: 1px;
 }
 .date-dropdown-box {
     display: flex;
     justify-content: space-between;
     width: 320px;
     height: 65px;
+    margin-bottom: 40px;
+    margin-left: 1px;
+}
+.block__filter-date-dropdown {
+    margin-bottom: 41px;
+    margin-left: 1px;
 }

@@ -1,0 +1,26 @@
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.label_size_default {
+    height: 23px;
+}
+.label_size_hover {
+    height: 20.44px;
+    align-items: stretch;
+}
+.label__text {
+    display: inline-block;
+    align-self: center;
+    line-height: 15px;
+}
+.label__state {
+    display: inline-block;
+    align-self: flex-start;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+}

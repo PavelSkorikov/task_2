@@ -1,3 +1,6 @@
+@import "./input/input.scss";
+@import "./label/label.scss";
+@import "./arrow/arrow.scss";
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
 @import "./text-field/text-field.scss";
@@ -14,26 +17,26 @@ body {
     padding: 0px;
     background-color: #FFFF;
 }
-.block {
+.wrapper-1 {
     display: flex;
     flex-direction: column;
     width: 321px;
     margin-left: 140px;
     margin-top: 140px;
 }
-.block__text-field {
+.wrapper-1__text-field {
     margin-bottom: 20px;
     margin-left: 1px;
 }
-.block__text-field-hover {
+.wrapper-1__text-field-hover {
     margin-bottom: 19.56px;
     margin-left: 1px;
 }
-.block__dropdown {
+.wrapper-1__dropdown {
     margin-bottom: 19.56px;
     margin-left: 1px;
 }
-.block__masked-text-field {
+.wrapper-1__masked-text-field {
     margin-bottom: 40px;
     margin-left: 1px;
 }
@@ -45,7 +48,11 @@ body {
     margin-bottom: 40px;
     margin-left: 1px;
 }
-.block__filter-date-dropdown {
+.wrapper-1__filter-date-dropdown {
     margin-bottom: 41px;
+    margin-left: 1px;
+}
+.wrapper-1__subscription-text-field {
+    margin-bottom: 100px;
     margin-left: 1px;
 }

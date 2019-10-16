@@ -2,20 +2,20 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-}
-.label_size_default {
-    height: 23px;
-}
-.label_size_hover {
+    
+    &_size_default {
+        height: 23px;
+    }
+    &_size_hover {
     height: 20.44px;
     align-items: stretch;
-}
-.label__text {
+    }
+    &__text {
     display: inline-block;
     align-self: center;
     line-height: 15px;
-}
-.label__state {
+    }
+    &__state {
     display: inline-block;
     align-self: flex-start;
     font-family: Montserrat-Regular;
@@ -23,4 +23,5 @@
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
+    }
 }

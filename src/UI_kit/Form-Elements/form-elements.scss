@@ -1,6 +1,7 @@
 @import "./input/input.scss";
 @import "./label/label.scss";
 @import "./arrow/arrow.scss";
+@import "./checkbox/checkbox.scss";
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
 @import "./text-field/text-field.scss";
@@ -17,42 +18,49 @@ body {
     padding: 0px;
     background-color: #FFFF;
 }
-.wrapper-1 {
+.elements {
     display: flex;
-    flex-direction: column;
-    width: 321px;
     margin-left: 140px;
     margin-top: 140px;
+    
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        &__text-field {
+            margin-bottom: 20px;
+            margin-left: 1px;
+        }
+        &__text-field-hover {
+            margin-bottom: 19.56px;
+            margin-left: 1px;
+        }
+        &__dropdown {
+            margin-bottom: 19.56px;
+            margin-left: 1px;
+        }
+        &__masked-text-field {
+            margin-bottom: 40px;
+            margin-left: 1px;
+        }
+        &__date-dropdown {
+            display: flex;
+            justify-content: space-between;
+            width: 320px;
+            height: 65px;
+            margin-bottom: 40px;
+            margin-left: 1px;
+        }
+        &__filter-date-dropdown {
+            margin-bottom: 41px;
+            margin-left: 1px;
+        }
+    }
+    .select {
+        display: flex;
+        flex-direction: column;
+        margin-left: 126px;
+    }
+
 }
-.wrapper-1__text-field {
-    margin-bottom: 20px;
-    margin-left: 1px;
-}
-.wrapper-1__text-field-hover {
-    margin-bottom: 19.56px;
-    margin-left: 1px;
-}
-.wrapper-1__dropdown {
-    margin-bottom: 19.56px;
-    margin-left: 1px;
-}
-.wrapper-1__masked-text-field {
-    margin-bottom: 40px;
-    margin-left: 1px;
-}
-.date-dropdown-box {
-    display: flex;
-    justify-content: space-between;
-    width: 320px;
-    height: 65px;
-    margin-bottom: 40px;
-    margin-left: 1px;
-}
-.wrapper-1__filter-date-dropdown {
-    margin-bottom: 41px;
-    margin-left: 1px;
-}
-.wrapper-1__subscription-text-field {
-    margin-bottom: 100px;
-    margin-left: 1px;
-}
+

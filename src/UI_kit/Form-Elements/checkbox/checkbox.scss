@@ -1,0 +1,28 @@
+.checkbox {
+    &__select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        padding-bottom: 2px;
+        stroke-width: 2px;
+        stroke: white;
+        &_checked {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #BC9CFF;
+            stroke: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+    }
+
+    &__label {
+
+    }
+}

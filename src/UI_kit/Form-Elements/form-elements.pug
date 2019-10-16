@@ -8,14 +8,16 @@ html(lang="ru")
         link(rel="stylesheet", href="style.css")
     body
         include ../logo.pug
-        div.wrapper-1
-            include ./text-field/text-field.pug
-            include ./text-field-hover/text-field-hover.pug
-            include ./dropdown/dropdown.pug
-            include ./masked-text-field/masked-text-field.pug
-            .date-dropdown-box
+        .elements
+            .inputs
+                include ./text-field/text-field.pug
+                include ./text-field-hover/text-field-hover.pug
+                include ./dropdown/dropdown.pug
+                include ./masked-text-field/masked-text-field.pug
                 include ./date-dropdown/date-dropdown.pug
-            include ./filter-date-dropdown/filter-date-dropdown.pug
-            include ./subscription-text-field/subscription-text-field.pug
-            
+                include ./filter-date-dropdown/filter-date-dropdown.pug
+                include ./subscription-text-field/subscription-text-field.pug
+            .select
+                include ./checkbox/checkbox.pug
+
             

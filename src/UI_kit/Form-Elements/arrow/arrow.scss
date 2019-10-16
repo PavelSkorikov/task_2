@@ -5,19 +5,20 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-}
-.arrow__icon {
-    display: inline-block;
-    font-family: 'Material Icons';
-    font-size: 24px;
-    line-height: 24px;
+
+    &__icon {
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 24px;
+        line-height: 24px;
     
-}
-.arrow__icon_color_gray {
-    color: rgba(31, 32, 65, 0.5);
-}
-.arrow__icon_color_gradient {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    background-clip: text;
-    color: transparent;
+        &_color_gray {
+            color: rgba(31, 32, 65, 0.5);
+        }
+        &_color_gradient {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            background-clip: text;
+            color: transparent;
+        }
+    }
 }

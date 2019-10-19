@@ -1,0 +1,11 @@
+mixin checkbox(checked, text)
+    .checkbox
+        if checked
+            .checkbox__select_checked
+        else
+            .checkbox__select 
+                include ./checkbox/check.pug
+.checkbox-buttons
+    +checkbox(false)
+    +checkbox(true)
+    +checkbox(true)

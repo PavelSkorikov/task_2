@@ -2,6 +2,7 @@
 @import "./label/label.scss";
 @import "./arrow/arrow.scss";
 @import "./checkbox-buttons/checkbox-buttons.scss";
+@import "./radio-buttons/radio-buttons.scss";
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
 @import "./text-field/text-field.scss";
@@ -57,10 +58,8 @@ body {
         }
     }
     .select {
-        display: flex;
-        flex-direction: column;
         margin-left: 126px;
-        margin-top: 3px;
+        width: 260 px;
     }
 
 }

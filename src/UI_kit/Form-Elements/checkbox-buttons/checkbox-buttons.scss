@@ -1,8 +1,7 @@
 @import "./checkbox/checkbox.scss";
 
 .checkbox-buttons {
-    display: flex;
-    flex-direction: column;
+    margin-top: 3px;
     width: 222px;
     & :first-child {
         margin-bottom: 16.56px;

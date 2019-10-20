@@ -1,6 +1,13 @@
 @import "./radio-button/radio-button.scss";
 
 .radio-buttons {
-    margin-top: 40.88px;
-    width: 220.74;  
+    margin-top: 40px;
+    width: 222;
+    &__label {
+        margin-bottom: 16px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
 }

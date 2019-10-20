@@ -1,2 +1,6 @@
-div(class="radio-buttons type__font_H3") radio buttons
-    include ./radio-button/radio-button.pug 
+include ./radio-button/radio-button.pug 
+.radio-buttons
+    div(class="radio-buttons__label type__font_H3") radio buttons
+    .radio-buttons__content
+        +RadioButton('Мужчина', true)
+        +RadioButton(' Женщина', false)

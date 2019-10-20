@@ -1,0 +1,9 @@
+mixin Toggle(text, checked) 
+    .toggle
+        if checked
+            div(class="toggle__select toggle__select_checked")
+                include ./toggle__point.pug
+        else
+            .toggle__select
+                include ./toggle__point.pug
+        .toggle__label=text

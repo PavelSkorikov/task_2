@@ -1,0 +1,16 @@
+@import "./toggle/toggle.scss";
+
+.toggle-buttons {
+    margin-top: 40px;
+    width: 260px;
+    height: 89px;
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__content {
+        
+        & :last-child {
+            
+        }
+    }
+}

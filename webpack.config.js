@@ -79,7 +79,9 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, "./src/index.pug")
     }),
-    new ExtractTextPlugin({filename: 'style.css'}),
+    new ExtractTextPlugin({
+      filename: 'style.css'
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'

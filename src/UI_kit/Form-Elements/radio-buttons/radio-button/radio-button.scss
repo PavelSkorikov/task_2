@@ -12,8 +12,15 @@
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 10px;
+        & :first-child {
+            opacity: 0;
+        }
         &_checked {
             border: 1px solid #BC9CFF;
+            & :first-child {
+                opacity: 1;
+            }
+
         }
     }
     &__label {

@@ -1,13 +1,6 @@
-mixin checkbox(checked, text)
-    div(class="checkbox")
-        if checked
-            .checkbox__select_checked
-                include ./checkbox/check.pug
-        else
-            .checkbox__select 
-        .checkbox__label=text 
+include ./checkbox/checkbox.pug
 .checkbox-buttons
     .type__font_H3 checkbox buttons
-    +checkbox(false, 'Можно курить')
-    +checkbox(true, 'Можно с питомцами')
-    +checkbox(true, 'Можно пригласить гостей (до 10 человек)')
+    +Checkbox(false, 'Можно курить')
+    +Checkbox(true, 'Можно с питомцами')
+    +Checkbox(true, 'Можно пригласить гостей (до 10 человек)')

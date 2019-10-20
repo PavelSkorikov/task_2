@@ -1,0 +1,9 @@
+mixin Checkbox(checked, text)
+    .checkbox
+        if checked
+            div(class="checkbox__select checkbox__select_checked")
+                include ./checkbox__check.pug
+        else
+            .checkbox__select
+                include ./checkbox__check.pug 
+        .checkbox__label=text 

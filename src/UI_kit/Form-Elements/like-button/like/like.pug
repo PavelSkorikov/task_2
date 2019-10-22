@@ -1,0 +1,10 @@
+mixin Like(count, checked)
+    if checked
+        div(class="like like_checked")
+            .like__heart favorite
+            .like__count=count
+    else
+        .like
+            .like__heart favorite_border
+            .like__count=count
+

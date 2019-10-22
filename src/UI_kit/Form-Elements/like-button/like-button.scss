@@ -1,0 +1,15 @@
+@import "./like/like.scss";
+
+.like-button {
+  margin-top: 41px;
+  width: 89.72px;
+  height: 51px;
+  &__title {
+      margin-bottom: 16px;
+
+  }
+  &__content {
+      display: flex;
+      justify-content: space-between;
+  }  
+}

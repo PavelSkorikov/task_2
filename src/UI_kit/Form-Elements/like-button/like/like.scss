@@ -1,0 +1,38 @@
+.like {
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgba(31, 32, 65, 0.25);
+    &__heart {
+        width: 20px;
+        height: 20px;
+        font-family: Material Icons;
+        font-size: 10px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__count {
+        padding-left: 2px;
+        font-family: Montserrat;
+        font-size: 10px;
+        line-height: 14 px;
+        text-align: center;
+    }
+    &_checked {
+        //вариант решения проблемы применения градиента к border с border-radius,
+        //по сути создаются два фона белый и градиентный
+        background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+
+        //цвет для текста внутри контейнера
+        color:  #BC9CFF;
+    }
+}

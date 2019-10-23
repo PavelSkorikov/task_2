@@ -1,0 +1,12 @@
+mixin Rate(count)
+    .rate
+        - for (var i = 1; i < 6; i++)
+            if i>count
+                .rate__star="star_border"
+            else
+                .rate__star="star"
+
+            
+            
+            
+

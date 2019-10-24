@@ -1,6 +1,6 @@
 mixin Rate(count)
     .rate
-        - for (var i = 1; i < 6; i++)
+        each i in [1, 2, 3, 4, 5]
             if i>count
                 .rate__star="star_border"
             else

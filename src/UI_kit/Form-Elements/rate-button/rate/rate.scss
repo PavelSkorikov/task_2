@@ -7,17 +7,20 @@
     &__star {
         width: 24px;
         height: 24px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        -webkit-background-clip: text; //обрезает фон по границе текста
+        -webkit-text-fill-color: transparent; //делает текст прозрачным чтобы цвет его изменился на цвет фона
         font-family: Material Icons;
         font-size: 24px;
         line-height: 20px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         &_checked {
             background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        }
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+       }
     }
 }

@@ -6,6 +6,7 @@
 @import "./toggle-buttons/toggle-buttons.scss";
 @import "./like-button/like-button.scss";
 @import "./rate-button/rate-button.scss";
+@import "./range-slider/range-slider.scss";
 @import "./button/button.scss";
 @import "./button-sign/button-sign.scss";
 @import "./text-field/text-field.scss";
@@ -63,6 +64,11 @@ body {
     .select {
         margin-left: 126px;
         width: 260 px;
+    }
+    .buttons {
+        margin-left: 132px;
+        margin-top: 3px;
+        width: 266 px;
     }
 
 }

@@ -1,41 +1,30 @@
 $(document).ready(function() {
-    var clicking = false, x;
-    //обработчик нажатия мышки, считываем координаты ползунка
-    $(".range-slider__point").mousedown(function(){
-        clicking = true;
-        
-        $(".range-slider__point").mousemove(function(event){
-            if(clicking == false) return;
-            
-                x = $(this).offset().left;
-                console.log(x);
-                var move = event.pageX-x;
-                console.log(move);
-                if(move>=6) move = 1;
-                else move = -1;
-                console.log(move);
-                if($(this).next().hasClass("range-slider__line")){
-                    var pos_left = parseInt($(".range-slider__range").css("margin-left"));
-                    var pos_right = parseInt($(".range-slider__range").css("margin-right"));
-                    if((pos_left+pos_right<266)&&(pos_left>=0)) $(".range-slider__range").css("margin-left", pos_left+move+'px');
-                }
-                              
-        });
+    //функция для подстановки пробела между тысячами и десятками тысяч в числе
+    function number_separator(number){
+        number = String(number);
+        if((number>999)&&(number<10000)){
+            number = number.slice(0, 1)+' '+number.slice(1, 4);
+        }
+        if(number>9999){
+            number = number.slice(0, 2)+' '+number.slice(1, 5);
+        }
+        return number;
+    }
+    // подключаем и настраиваем плагин ionRangeSlider
+    $(".range-slider__slider").ionRangeSlider({
+        skin: "big", //скин в котором я изменил стили под требования задания
+        type: "double",
+        min: 0,
+        max: 15000,
+        from: 4500,
+        to: 9600,
+        step: 100,
+        hide_min_max: true,
+        hide_from_to: true,
+        //при изменении ползунка выводим значение в рублях
+        onChange: function (data) {
+            $(".range-slider__cost").html(number_separator(data.from)+'&#8381'+' - '+number_separator(data.to)+'&#8381');    
+        }
     });
-
-    //запоминаем состояние отжатой кнопки мыши
-    $(document).mouseup(function(){
-        clicking = false;
-    });
-
-    $(".range-slider__point").mouseleave(function(){
-        clicking = false;
-    });
-    
-    
-    
-
-    
-    
     
 });

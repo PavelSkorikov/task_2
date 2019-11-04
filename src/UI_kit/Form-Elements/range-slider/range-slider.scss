@@ -7,9 +7,9 @@
         margin-bottom: 23px;
     }
     &__cost {
-        width: 102px;
+        width: 120px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         font-family: Montserrat-Regular;
         font-size: 12px;
         line-height: 15px;
@@ -17,39 +17,9 @@
         text-transform: uppercase;
         color: rgba(31, 32, 65, 0.5);
     }
+    //контейнер для плагина ionRangeSlider
     &__slider {
-        width: 266px;
-        height: 6px;
-        background: #FFFFFF;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        border-radius: 3px;
-        display: flex;
-        align-items: center;
+
     }
-    &__range {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 266px;
-        position: relative;
-        margin-left: 0px;
-        margin-right: 20px;
-    }
-    &__line {
-        height: 6px;
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    &__point {
-        width: 12px;
-        height: 12px;
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-        border: 2px solid #FFFFFF;
-        border-radius: 10px;
-        flex-grow: 0;
-        flex-shrink: 0;
-        cursor: pointer;
-    }
+  
 }

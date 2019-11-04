@@ -54,7 +54,8 @@
 		 url('./fonts/MaterialIcons-Regular.woff') format('woff'),
 		 url('./fonts/MaterialIcons-Regular.ttf') format('truetype');
   }
-
+@import "./jQuery/jquery-ui.min.css";
+@import "./jQuery/ion.rangeSlider.css";
 @import "./UI_kit/colors&type/colors&type.scss";
 @import "./UI_kit/cards/cards.scss";
 @import "./UI_kit/Form-Elements/form-elements.scss";

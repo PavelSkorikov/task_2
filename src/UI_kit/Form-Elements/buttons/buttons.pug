@@ -1,0 +1,19 @@
+include ./button-short/button-short.pug
+include ./link/link.pug
+in
+
+.buttons
+    .buttons__title
+        .type__font_H3 buttons
+    .buttons__buttons-short-box
+        +Button-short('dark', false, 'click me')
+        +Button-short('dark', true, 'click me') 
+        +Button-short('light', false, 'click me')
+        +Button-short('light', true, 'click me')
+    .buttons__link-box
+        +Link('click me', false)
+        +Link('click me', true)
+    include ./button-long/button-long.pug
+    
+
+        

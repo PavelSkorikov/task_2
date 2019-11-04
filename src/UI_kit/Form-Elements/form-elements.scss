@@ -7,8 +7,7 @@
 @import "./like-button/like-button.scss";
 @import "./rate-button/rate-button.scss";
 @import "./range-slider/range-slider.scss";
-@import "./button/button.scss";
-@import "./button-sign/button-sign.scss";
+@import "./buttons/buttons.scss";
 @import "./text-field/text-field.scss";
 @import "./text-field-hover/text-field-hover.scss";
 @import "./dropdown/dropdown.scss";
@@ -65,7 +64,7 @@ body {
         margin-left: 126px;
         width: 260 px;
     }
-    .buttons {
+    .different {
         margin-left: 132px;
         margin-top: 3px;
         width: 266 px;

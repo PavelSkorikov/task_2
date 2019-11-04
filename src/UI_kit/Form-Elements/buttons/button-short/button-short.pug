@@ -1,0 +1,12 @@
+mixin Button-short(style, clicked, text)
+    //переменная для описания стиля
+    - var st = ' button-short_style_' + style
+    if clicked
+        //переменная которая создает класс если ckicked
+        - var cl = st +'_clicked'
+        div(class='button-short'+st+cl)
+            .type__font_H3=text
+    else
+        div(class='button-short'+st)
+            .type__font_H3=text
+    

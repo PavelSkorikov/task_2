@@ -1,0 +1,7 @@
+mixin Link(text, clicked)
+    if clicked
+        a(class="link link_clicked")
+            .type__font_H3=text
+    else
+        a(class="link")
+            .type__font_H3=text

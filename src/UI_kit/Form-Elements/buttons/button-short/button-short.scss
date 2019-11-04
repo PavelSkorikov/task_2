@@ -1,0 +1,30 @@
+.button-short {
+    width: 99px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 22px;
+    cursor: pointer;
+    &_style_dark {
+        color: white;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        &_clicked {
+            background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+        }
+    }
+    &_style_light {
+        color: #BC9CFF;
+        //вариант решения проблемы применения градиента к border с border-radius,
+        //по сути создаются два фона белый и градиентный
+        background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background-clip: padding-box, border-box;
+        border: solid 2px;
+        color: #BC9CFF;
+        &_clicked {
+            border: solid 2px rgba(255, 255, 255, 0.5);
+        }
+    }
+    
+}

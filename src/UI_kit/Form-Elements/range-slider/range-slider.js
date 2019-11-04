@@ -6,7 +6,7 @@ $(document).ready(function() {
             number = number.slice(0, 1)+' '+number.slice(1, 4);
         }
         if(number>9999){
-            number = number.slice(0, 2)+' '+number.slice(1, 5);
+            number = number.slice(0, 2)+' '+number.slice(2, 5);
         }
         return number;
     }

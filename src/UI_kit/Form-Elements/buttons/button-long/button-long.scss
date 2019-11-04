@@ -1,0 +1,32 @@
+.button-long {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    cursor: pointer;
+    &__text {
+        position: absolute;
+        width: 280px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__icon {
+        position: absolute;
+        margin-left: 138px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        color: white;
+        line-height: 1;
+    }
+}

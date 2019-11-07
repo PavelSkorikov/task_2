@@ -9,4 +9,7 @@ import "./jQuery/jquery-ui.min"
 import "./jQuery/ion.rangeSlider"
 import "./UI_kit/Form-Elements/buttons/button-short/button-short"
 import "./UI_kit/Form-Elements/buttons/link/link"
+import "./jQuery/jquery.simplePagination"
+import "./jQuery/paginator.min";
+import "./UI_kit/Form-Elements/paginator-box/paginator/paginator"
 console.log("hello");
